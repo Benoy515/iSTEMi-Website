@@ -12,6 +12,18 @@ section {
   padding: 2% 15%;
 }
 
+.arrow {
+  padding-bottom: 0;
+  font-size: 3rem;
+  color: white;
+  transition: padding-bottom 0.5s ease;
+}
+
+.arrow:hover {
+  padding-bottom: 1%;
+  transition: padding-bottom 0.5s ease;
+}
+
 /* Navbar */
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
@@ -77,15 +89,6 @@ section {
 .titleArrow {
   position: absolute;
   bottom: 3%;
-  padding-bottom: 0;
-  font-size: 3rem;
-  color: white;
-  transition: padding-bottom 0.5s ease;
-}
-
-.titleArrow:hover {
-  padding-bottom: 1%;
-  transition: padding-bottom 0.5s ease;
 }
 
 /* About on Landing Page */
@@ -93,6 +96,22 @@ section {
 #aboutSection {
   height: 100vh;
   background: linear-gradient(#181029,#1C0C5B);
+  position: relative;
+}
+
+.aboutMe {
+  margin-left: 2%;
+  height: auto;
+}
+
+.aboutProject {
+  margin-top: 5%;
+  text-align: right;
+}
+
+.textContent {
+  width: 70%;
+  display: inline-block;
 }
 
 #aboutSection h1 {
@@ -100,11 +119,119 @@ section {
   font-size: 6rem;
 }
 
+#aboutSection h2 {
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+#aboutSection h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+
+#aboutSection p, a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  transition-property: margin-left color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  /* transition: margin-left 0.5s ease-out; */
+}
+
+
+#aboutSection a:hover {
+  color: grey;
+  margin-left: 3%;
+  transition-property: margin-left color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  /* transition: margin-left 0.5s ease-out; */
+}
+
+#aboutSection .digitalNarrative {
+  width: auto;
+}
+
+.aboutMeImg {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  object-position: 0 0;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.aboutProjectImg {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  object-position: 40% 0;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.aboutArrow {
+  position: absolute;
+  right: 48%;
+  bottom: 3%;
+}
+
 /* Timeline on Landing Page */
 #timelineSection {
-  height: 100vh;
-  background: linear-gradient(#EEEEEE, slateblue)
+  height:200vh;
+  /* background: linear-gradient(#1C0C5B, slateblue) */
+  background-color: slateblue;
 }
+
+#timelineSection h1 {
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+#timelineSection h2 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+#timelineSection h3 {
+  margin-left: 5%;
+}
+
+.vl {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%,0%);
+  height: 100rem;
+  border: 2px solid white;
+}
+
+.headerSpace {
+  height: 10rem;  
+}
+
+#timelineSection .row {
+  padding: 3rem;
+}
+
+.dot {
+  text-align: center;
+}
+
+.dot i{
+  color: white;
+  font-size: 3rem;
+}
+
+.event {
+  /* border: 2px white solid; */
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #7A7ACD;/*#5A6ACD;*/
+
+}
+
 
 /* Sources on Landing Page */
 #sourcesSection {

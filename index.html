@@ -52,30 +52,73 @@
 
     <div class="homeObjects">
       <h1 class="titleText">Economic Analysis through Machine Learning</h1>
-      <a href="#aboutSection"><i class="fas fa-chevron-down titleArrow"></i></a>
+      <a href="#aboutSection"><i class="fas fa-chevron-down arrow titleArrow"></i></a>
       <img class="homePageImg" src="resources/spinningGlobe.gif" alt="city timelapse">
     </div>
   </section>
 
   <section id="aboutSection">
     <h1 class="aboutTitle">About</h1>
-    <h2 class="aboutMe">Narrative</h2>
-      <iframe width="420" height="315"
-      src="https://youtu.be/L64SmPoUxhE">
-      </iframe>
-    <h2 class="aboutProject">Project</h2>
+    <div class="aboutMe row">
+      <div class="textContent col-9">
+        <h2>Narrative</h2>
+        <p>My name is Abhay Benoy and I'm senior in high school. I've always had a love of building</p>
+        <ul>
+          <li class="digitalNarrative"><a href="https://drive.google.com/file/d/1MbaEpT-e6YSesYX5UPN_077VMDkXxYRH/view?usp=sharing">Digital Narrative #1</a></li>
+          <li class="digitalNarrative"><a href="">Coming Soon</a></li>
+          <li class="digitalNarrative"><a href="">Coming Soon</a></li>
+        </ul>
+      </div>
+      <img src="resources/professionalPicture.jpg" alt="professionalPicture" class="aboutMeImg col-3">
+    </div>
+    
+    <div class="aboutProject row">
+      <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1020317514%2F960x0.jpg%3Ffit%3Dscale" alt="projectPicture" class="aboutProjectImg col-3">
+      <div class="textContent col-9">
+        <h2 class="aboutProjectTitle">Project</h2>
+        <p>My project is to use independent AI agents taught through reinforcement learning to determine the 
+          best economic policy such as optimal tax rates, the benefits of universal income, and the ideal minimum wage.</p>
+      </div>
+    </div>
+    <a href="#timelineSection"><i class="fas fa-chevron-down arrow aboutArrow"></i></a>
   </section>
 
   <section id="timelineSection">
-
+    <h1 class="timelineTitle">Timeline</h1>
+    <div class="vl"></div>
+    <div class="row headerSpace"></div>
+    <div class="row">
+      <div class="col-5"></div>
+      <div class="col-2 dot">
+        <i class="far fa-dot-circle"></i>
+      </div>
+      <div class="col-5 event">
+        <h2>October 7th</h2>
+        <h3>Complete Timeline</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-5 event">
+        <h2>November 23th</h2>
+        <h3>Create Test reinforcement learning programs</h3>
+      </div>
+      <div class="col-2 dot">
+        <i class="far fa-dot-circle"></i>
+      </div>
+      <div class="col-5"></div>
+    </div>
   </section>
 
   <section id="sourcesSection">
 
   </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="resources/cityLapse.jpg" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a13b4f02a7.js" crossorigin="anonymous"></script>
+<script type="module" src="script.js"></script>
+<script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 </body>
 
 </html>
