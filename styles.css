@@ -94,7 +94,7 @@ section {
 /* About on Landing Page */
 
 #aboutSection {
-  height: 100vh;
+  height: auto;
   background: linear-gradient(#181029,#1C0C5B);
   position: relative;
 }
@@ -180,9 +180,16 @@ section {
 
 /* Timeline on Landing Page */
 #timelineSection {
-  height:200vh;
+  height:auto;
   /* background: linear-gradient(#1C0C5B, slateblue) */
   background-color: slateblue;
+  
+}
+
+#timelineSection img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 3rem;
 }
 
 #timelineSection h1 {
