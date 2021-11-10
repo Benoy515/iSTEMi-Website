@@ -24,6 +24,11 @@ section {
   transition: padding-bottom 0.5s ease;
 }
 
+.sectionTitle {
+  font-weight: 900;
+  font-size: 6rem;
+}
+
 /* Navbar */
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
@@ -114,11 +119,6 @@ section {
   display: inline-block;
 }
 
-#aboutSection h1 {
-  font-weight: 900;
-  font-size: 6rem;
-}
-
 #aboutSection h2 {
   font-weight: 300;
   font-size: 4rem;
@@ -180,7 +180,8 @@ section {
 
 /* Timeline on Landing Page */
 #timelineSection {
-  height:auto;
+  height: auto;
+  position: relative;
   /* background: linear-gradient(#1C0C5B, slateblue) */
   background-color: slateblue;
   
@@ -190,11 +191,6 @@ section {
   margin: 0 auto;
   display: block;
   border-radius: 3rem;
-}
-
-#timelineSection h1 {
-  font-weight: 900;
-  font-size: 6rem;
 }
 
 #timelineSection h2 {
@@ -239,9 +235,25 @@ section {
 
 }
 
+.timelineArrow {
+  position: absolute;
+  bottom: 3%;
+  left: 48%;
+}
+
 
 /* Sources on Landing Page */
 #sourcesSection {
-  height: 100vh;
-  background: linear-gradient(slateblue, #EEEEEE)
+  height: auto;
+  background-color: darkslateblue;
+  /* background: linear-gradient(slateblue, #EEEEEE) */
+}
+
+.sourcesList {
+  margin-left: 5%;
+}
+
+.source {
+  font-size: 3rem;
+  margin: 5% 0;
 }
